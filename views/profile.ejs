@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <script
+          defer
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./stylesheets/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title><%= title %></title>
+
+</head>
+<body>
+
+    <nav class="fixed top-0 inset-x-0 h-12 z-10 text-gray-800 tracking-widest border-b" id="navbar">
+       
+        <div class="h-full bg-white flex w-full max-w-6xl mx-auto">
+            <div class="flex-none w-56 px-2 flex items-center">
+               
+                
+                <a class="cursor-pointer font-bold tracking-wider text-gray-800 hover:text-gray-600 transition duration-200 ease-in-out flex items-center gap-3">
+                    <!-- <span class="w-9 h-9 rounded-full flex items-center justify-center bg-yellow-200">
+                        <i class="fas fa-code"></i>
+                    </span> -->
+                    <div class="mailLogo">
+                        <h1>EZYMail</h1>
+                       
+                       </div>
+                </a>
+
+               
+            </div>
+            <div class="flex-grow flex items-center px-2">
+                <form class="hidden md:h-8 md:flex md:w-full md:max-w-lg">
+                    <div class="flex-grow flex relative">
+                        <input type="text" class="flex-grow appearance-none pl-4 pr-10 text-xs tracking-widest border border-gray-200 rounded-full focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out" placeholder="Search...">
+                        <span class="absolute right-0 inset-y-0 w-10 rounded-r-full">
+                            <button type="button" class="h-full w-full text-xs rounded-r-full focus:outline-none transition duration-200 ease-in-out text-gray-400 hover:text-gray-900">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="flex-none flex w-40 px-2">
+                <div class="flex-grow flex items-center justify-end gap-2">
+                    <a class="w-9 h-9 cursor-pointer rounded-full flex items-center justify-center hover:bg-yellow-300 transition duration-200 ease-in-out" href="/userdash" >
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <span class="relative" x-data="{dropdown:false}" x-cloak>
+                        <button class="w-9 h-9 rounded-full flex items-center justify-center hover:bg-yellow-300 transition duration-200 ease-in-out focus:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-200 border border-white" x-on:click="dropdown=!dropdown">
+                            <i class="fas fa-user text-gray-900"></i>
+                        </button>
+                        
+                        <div 
+                             class="bg-white shadow-xl py-4 border border-gray-200 mt-3 rounded flex flex-col right-0 absolute" 
+                             style="min-width:8rem" 
+                             x-show="dropdown" 
+                             x-on:click.away="dropdown=false" 
+                             x-transition:enter="transition ease-in-out duration-200" 
+                             x-transition:enter-start="opacity-0 transform translate-y-3" 
+                             x-transition:enter-end="opacity-100 transform translate-y-0" 
+                             x-transition:leave="transition ease-in-out duration-100" 
+                             x-transition:leave-start="opacity-100 transform translate-y-0" 
+                             x-transition:leave-end="opacity-0 transform translate-y-3"
+                             >
+    
+                            <span class="absolute bg-white border-t border-l border-gray-200 transform rotate-45 w-2 h-2 -top-1 right-3 pointer-events-none"></span>
+    
+                            <a class="text-xs px-4 py-2 hover:bg-yellow-200 transition duration-200 ease-in-out flex items-center gap-3 cursor-pointer">
+                                <i class="fas fa-user-edit w-4"></i>
+                                <p>Account</p>
+                            </a>
+                            <a class="text-xs px-4 py-2 hover:bg-yellow-200 transition duration-200 ease-in-out flex items-center gap-3 cursor-pointer">
+                                <i class="fas fa-times-circle w-4 text-red-400"></i>
+                                <p>Logout</p>
+                            </a>
+    
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- <section class="mt-12 text-gray-800 tracking-widest w-full max-w-6xl mx-auto flex min-h-screen">
+        <nav class="w-56 flex-none text-gray-800 tracking-widest border-r">
+            <div class="h-full flex flex-col gap-2 p-2">
+                <div class="py-2 flex flex-col gap-1">
+                    <a class="flex items-center text-xs rounded tracking-widest bg-yellow-200 px-4 py-2 cursor-pointer hover:bg-yellow-100 transition duration-200 ease-in-out">
+                        <i class="fas fa-truck text-sm w-8"></i>
+                        <p class="font-semibold">Distribution</p>
+                    </a>
+                    <a class="flex items-center text-xs rounded tracking-widest px-4 py-2 cursor-pointer hover:bg-yellow-100 transition duration-200 ease-in-out">
+                        <i class="far fa-calendar-check text-sm w-8"></i>
+                        <p>Event</p>
+                    </a>
+                    <a class="flex items-center text-xs rounded tracking-widest px-4 py-2 cursor-pointer hover:bg-yellow-100 transition duration-200 ease-in-out">
+                        <i class="far fa-images text-sm w-8"></i>
+                        <p>Gallery</p>
+                    </a>
+                </div>
+            </div>
+        </nav> -->
+
+
+        <div class="myContain">
+        <div class="p-4 flex flex-col md:flex-row md:items-start gap-8 hlx" x-data="{tab:'account'}" id="hero" >
+            <div class="w-56 text-xs">
+                <div class="flex flex-col border rounded overflow-hidden divide-y divide-gray-200">
+                    <button type="button" class="text-left px-4 py-2 cursor-pointer focus:outline-none tracking-widest transition duration-200m ease-in-out relative" x-bind:class="{'bg-gray-100': tab!=='account'}" x-on:click="tab='account'">
+                        <span x-bind:class="{'absolute right-0 inset-y-0 w-1 bg-green-500': tab==='account'}"></span>
+                        Account
+                    </button>
+                    <button type="button" class="text-left px-4 py-2 cursor-pointer focus:outline-none tracking-widest transition duration-200m ease-in-out relative" x-bind:class="{'bg-gray-100': tab!=='security'}" x-on:click="tab='security'">
+                        <span x-bind:class="{'absolute right-0 inset-y-0 w-1 bg-green-500': tab==='security'}"></span>
+                        Security
+                    </button>
+                </div>
+            </div>
+            <form class="flex-grow max-w-lg" id="form_1">
+                <div class="flex flex-col gap-8">
+                    <!-- PERSONAL -->
+                    <div class="flex flex-col gap-2" x-show="tab==='account'" id="personal">
+                        <h1 class="font-bold text-2xl">Personal</h1>
+                        <hr class="my-2">
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold text-xs">First Name</label>
+                            <input type="text" class="appearance-none px-4 py-2 text-xs tracking-widest border border-gray-200 rounded focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out"
+                            value="<%=gUser.given_name%>" 
+                            id="fname"
+                            >
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold text-xs">Last Name</label>
+                            <input type="text" class="appearance-none px-4 py-2 text-xs tracking-widest border border-gray-200 rounded focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out"
+                            value="<%=gUser.family_name%>"
+                            id="lname"
+                            >
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold text-xs">Email Address <span class="text-gray-400" style="font-size:10px">(This email will be use for login)</span></label>
+                            <input type="text" class="appearance-none px-4 py-2 text-xs tracking-widest border border-gray-200 rounded focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out"
+                            value="<%=gUser.email%>" readonly 
+                            id="email"
+                            >
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold text-xs">Language</label>
+                            <input type="text" class="appearance-none px-4 py-2 text-xs tracking-widest border border-gray-200 rounded focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out"
+                            value="<%=gUser.locale%>"
+                            
+                            >
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="bg-blue-500 hover:bg-blue-600 transition duration-200 ease-in-out rounded text-xs px-3 py-2 tracking-widest text-white font-semibold focus:outline-none js-modal-trigger" id="svbtn1"
+                            
+                             
+                             data-target="modal-js-example"
+                            >Save</button>
+                        </div>
+                    </div>
+                    <!-- ADDRESS -->
+                    <div class="flex flex-col gap-2" x-show="tab==='accounts'">
+                        <!-- <h1 class="font-bold text-2xl">Address</h1> -->
+                        <!-- <hr class="my-2">
+                        <div class="flex flex-col gap-1"> -->
+                            <!-- <label class="font-semibold text-xs">Address 1</label> -->
+                            <!-- <input type="text" class="appearance-none px-4 py-2 text-xs tracking-widest border border-gray-200 rounded focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out"> -->
+                        </div>
+                        </div>
+                      </form>
+                      
+                      <form class="flex-grow max-w-lg" id="form_2">
+                        <div class="flex flex-col gap-8">
+                     
+                    <!-- PASSWORD -->
+                    <div class="flex flex-col gap-2" x-show="tab==='security'" id="security">
+                        <h1 class="font-bold text-2xl">Credential</h1>
+                        <hr class="my-2">
+                        <!-- <div class="flex flex-col gap-1">
+                            <label class="font-semibold text-xs">Current Password</label>
+                            <input type="text" class="appearance-none px-4 py-2 text-xs tracking-widest border border-gray-200 rounded focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out">
+                        </div> -->
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold text-xs">New Password</label>
+                            <input type="text" class="appearance-none px-4 py-2 text-xs tracking-widest border border-gray-200 rounded focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out"
+                            id="newpass"
+                            >
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold text-xs">Confirm New Password</label>
+                            <input type="text" class="appearance-none px-4 py-2 text-xs tracking-widest border border-gray-200 rounded focus:outline-none focus:ring-4 focus:ring-gray-200 focus:border-transparent bg-white transition duration-200 ease-in-out">
+                        </div>
+                        <!-- <div class="flex justify-end">
+                            <button class="bg-blue-500 hover:bg-blue-600 transition duration-200 ease-in-out rounded text-xs px-3 py-2 tracking-widest text-white font-semibold focus:outline-none">Save</button>
+                        </div> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="card" id="card-3"style="width: 15rem;">
+        <img id="imG" src= <%= gUser.picture %> 
+        >
+        <p style="text-align: center;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        /* margin-bottom: -15px; */
+
+        ">Change your Photo:</p>
+        
+        <p style="color: red;
+        text-align: center;
+        "
+        >This feature is currently under construction</p>
+        <div class="card-body">
+            <input type="file" name="" id="img" placeholder="Upload Your Image" 
+            >
+            
+            
+            <div class="flex justify-end">
+                <button class="bg-blue-500 hover:bg-blue-600 transition duration-200 ease-in-out rounded text-xs px-3 py-2 tracking-widest text-white font-semibold focus:outline-none" id="svbtn2">Save</button>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+
+    <section class="footr">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+           <symbol id="bootstrap" viewBox="0 0 118 94">
+             <title>Bootstrap</title>
+             <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+           </symbol>
+           <symbol id="facebook" viewBox="0 0 16 16">
+             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+           </symbol>
+           <symbol id="instagram" viewBox="0 0 16 16">
+               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+           </symbol>
+           <symbol id="twitter" viewBox="0 0 16 16">
+             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+           </symbol>
+         </svg>
+       
+         <div class="container" style="margin: 0;
+         max-width: 100%;">
+           <footer class="d-flex flex justify-content-between align-items-center py-3 my-3 border-top">
+             <div class="col-md-0 d-flex align-items-center">
+               <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                 <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+               </a> -->
+               <span class="mb-0 mb-md-0 text-muted">&copy;Copyright 2022</span>
+             </div >
+             <div class="mailLogo">
+               <h1>EZYMail</h1>
+              </div>
+         
+             <ul class="nav col-md-1 justify-content-end list-unstyled d-flex">
+               <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+               <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+               <!-- <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li> -->
+             </ul>
+           </footer>
+         </div>
+         </section>
+
+
+         <div id="modal-js-example" class="modal">
+            <div class="modal-background"></div>
+          
+            <div class="modal-content">
+              <div class="box">
+                <p>Go to security Section and set your password</p>
+                <!-- Your content -->
+              </div>
+            </div>
+          
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.11.1/cdn.js" integrity="sha512-h2aNjnxfiJSH8nUAizyHlivjczoT8LdauKF+L4ZunZbQj078qiCGey5vKNKHO/yDf3BvLQkhoxEqhXBTBG37Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        const svbtn1=document.querySelector('#svbtn1');
+        // const svbtn2=document.querySelector('#svbtn2');
+        const personal=document.querySelector('#personal');
+        const security=document.querySelector('#security');
+        const form_1=document.querySelector('#form_1');
+        const form_2=document.querySelector('#form_2');
+
+        const fname=document.querySelector('#fname');
+        const lname=document.querySelector('#lname');
+        const email=document.querySelector('#email');
+        const password=document.querySelector('#newpass');
+        const image=document.querySelector('#imG');
+
+        // document.addEventListener('DOMContentLoaded', () => {
+  // Functions to open and close a modal
+//   function openModal($el) {
+//     $el.classList.add('is-active');
+//   }
+
+//   function closeModal($el) {
+//     $el.classList.remove('is-active');
+//   }
+
+//   function closeAllModals() {
+//     (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+//       closeModal($modal);
+//     });
+//   }
+
+//   // Add a click event on buttons to open a specific modal
+//   (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+//     const modal = $trigger.dataset.target;
+//     const $target = document.getElementById(modal);
+
+//     $trigger.addEventListener('click', () => {
+//       openModal($target);
+//     });
+//   });
+
+//   // Add a click event on various child elements to close the parent modal
+//   (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+//     const $target = $close.closest('.modal');
+
+//     $close.addEventListener('click', () => {
+//       closeModal($target);
+//     });
+//   });
+
+//   // Add a keyboard event to close all modals
+//   document.addEventListener('keydown', (event) => {
+//     const e = event || window.event;
+
+//     if (e.keyCode === 27) { // Escape key
+//       closeAllModals();
+//     }
+//   });
+// });
+
+
+
+// console.log(fnames);
+svbtn1.addEventListener('click',async(e)=>{
+    
+    e.preventDefault();
+    const fnames=fname.value;
+const lnames=lname.value;
+const emails=email.value;
+const pass=password.value;
+const imgLink=image.getAttribute('src');
+
+    const config={
+        //add method to post
+        method:'post',
+        url:'/profile',
+        //set form data and send it to server
+        data:{
+            firstName:fnames,
+            lastName:lnames,
+            email:emails,
+            password:pass,
+            image:imgLink
+
+
+
+        }
+        
+    }
+
+    let response=await axios(config);
+    let result = await response.data;
+    
+
+    if(result==success){
+        alert('User Created successfully');
+        // openModal(document.getElementById('modal-js-example'));
+        // window.location.href = '/profile';   
+        // openModal(document.getElementById('modal-js-example'));
+        // window.location.href = '/profile';
+    }
+    else{
+        alert('try again');
+    }
+    
+
+
+})
+
+    </script>
+
+
+</body>
+</html>

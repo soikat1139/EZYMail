@@ -1,0 +1,54 @@
+* {
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.font-sans {
+	font-family: 'Poppins', sans-serif;
+}
+
+.font-open-sans {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.mailLogo p{
+    font-family: 'Montserrat Subrayada', sans-serif;
+  }
+  .mailLogo h1{
+    font-family: 'Monoton', cursive;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  /* #navbar{
+    margin-bottom: 5rem;
+  } */
+  #hero{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+/* //make myContain flex row and make it center */
+  .myContain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+ #card-3 input{
+  border: none;
+ 
+ }
+
+ 
+  /* add media query for mobile */
+  @media screen and (max-width: 768px){
+   .myContain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+  }

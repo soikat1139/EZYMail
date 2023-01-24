@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f8fc;
+  color: #141c2c;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* margin-top: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: #2762eb;
+  text-decoration: none;
+}
+.container {
+  background-color: rgb(248, 248, 248);
+  border-radius: 3px;
+  /* border: 20px solid #dce7ff; */
+  width: 90%;
+  height: 95vh;
+  max-width: 100%;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+form {
+  border-right: 1px solid #ecf2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  flex: 1;
+}
+
+.form-control {
+  margin: 10px 0;
+  width: 100%;
+}
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input:not([type="checkbox"]) {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  /* border-radius: 3px; */
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.checkbox-container label {
+  color: #7a7e8c;
+  font-weight: normal;
+}
+
+.checkbox-container a {
+  margin-left: auto;
+}
+
+.btn {
+  background-color: #141c2c;
+  border: 2px solid #141c2c;
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-family: inherit; */
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: #ecf2ff;
+  color: #141c2c;
+}
+
+.btn img {
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  /*   padding-right: 5px; */
+  /*   cursor: pointer; */
+}
+
+.features {
+  flex: 1.4;
+  padding: 40px;
+}
+.feature {
+  padding-left: 30px;
+  position: relative;
+  margin: 40px 0;
+}
+.feature i {
+  color: #2762eb;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+feature h3 {
+  margin: 0;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  form {
+    border-right: 0;
+  }
+  #Glog{
+    font-size: 10px;
+    height: 3.5rem;
+  }
+}
+#Glog{
+  /* font-family: "Rajdhani", sans-serif; */
+  font-weight: bold;
+  font-size: 25px;
+  height: 3.3rem;
+  font-family: 'Great Vibes', cursive;
+max-width: 100%;
+padding: 10px;
+  margin: 2px 0;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content:center;
+  /* align-items:flex-start; */
+  
+ 
+}
+#Glog:hover{
+  color: #2762eb;
+}
+#Glog img{
+  margin-right: 15px;
+}

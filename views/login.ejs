@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./stylesheets/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rajdhani:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <button class="btn btn-ghost" id="Glog">
+          <img
+            src="http://pngimg.com/uploads/google/google_PNG19635.png"
+            alt="Google Image"
+          />
+          <a href="/glogIn">Google log In</a>
+        </button>
+
+        <small>or</small>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" />
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button class="btn" id="log">Log In</button>
+
+        <small>Don't have an account? <a href="#">Sign Up</a> </small>
+      </form>
+
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-gift"></i>
+          <h3>Features</h3>
+
+          <p>
+            A modern and clean design system for developing fast and powerful
+            web interfaces.
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-code"></i>
+          <h3>Future Updates</h3>
+          <p>
+            A modern and clean design system for developing fast and powerful
+            web interfaces.
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-edit"></i>
+          <h3>Technology</h3>
+          <p>
+            A modern and clean design system for developing fast and powerful
+            web interfaces.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+   <script>
+      const log = document.getElementById("log");
+      // const Glog = document.getElementById("Glog");
+      const email = document.getElementById("email");
+      const password = document.getElementById("password");
+      // const remember = document.getElementById("remember");
+
+
+      // log.addEventListener("click", (e) => {
+//         e.preventDefault();
+//         const data = {
+//           email: email.value,
+//           password: password.value
+//           // remember: remember.checked,
+//         };
+//         console.log(data)
+//         axios
+//           .post("/login", data)
+//           .then((res) => {
+//             console.log('hello')
+//             console.log(res.data);
+//             // window.location.href = "/";
+//           })
+//           .catch((err) => {
+//             console.log('hello')
+//             console.log(err);
+//           });
+//       });
+
+log.addEventListener('click',async(e)=>{
+  console.log("got clicked")
+  e.preventDefault();
+  const config={
+        //add method to post
+        method:'post',
+        url:'/login',
+        //set form data and send it to server
+        data:{
+            email:email.value,
+            password:password.value
+
+        }
+        
+    }
+
+    try{
+        const res=await axios(config);
+        // console.log(res.data.firstName);
+
+       if(res.data.firstName){
+        window.location.href = "/userdash";
+       }
+          
+        
+        
+         
+    }catch(err){
+        console.log(err);
+
+    }
+
+})
+
+
+    </script>
+   </body>
+ </html>

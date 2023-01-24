@@ -1,0 +1,87 @@
+/* *{
+    border: 2px solid red;
+} */
+
+.form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle {
+    outline: 0;
+  }
+
+  .logoNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    /* background-color: black; */
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+  .mailLogo{
+    text-align: center;
+    margin-top: -10px;
+
+  }
+  .mailLogo h1{
+    font-family: 'Monoton', cursive;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .mailLogo p{
+    font-family: 'Montserrat Subrayada', sans-serif;
+  }
+.card-1{
+  margin-top: 3rem;
+}
+#greet{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  
+}
+.box_1{
+  border-radius:0px
+ 
+}
+
+.header_1{
+  height: 2.5rem;
+  text-align: start;
+  margin-bottom: 3px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: lighter;
+  padding-left: 6px;
+}
+.header_1 p{
+  margin: 0;
+  padding-left: 0;
+}
+.footer_1{
+  height: 2rem;
+  text-align: start;
+  margin-bottom: 10px;
+
+}
+.font{
+  margin-right: 10px;
+}
+
+.footr{
+  margin-top:3rem
+}
+
+#paginate{
+  margin-top: 0.5rem;
+ 
+}
